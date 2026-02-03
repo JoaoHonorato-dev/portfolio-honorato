@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Desenvolvedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo" aria-label="Home">Portfólio</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link" data-i18n="nav.home">Home</a></li>
+        <li><a href="#sobre" class="nav__link" data-i18n="nav.about">Sobre mim</a></li>
+        <li><a href="#projetos" class="nav__link" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#curiosidades" class="nav__link" data-i18n="nav.curiosities">Curiosidades</a></li>
+        <li>
+          <button type="button" class="nav__lang" id="lang-toggle" aria-label="Alterar idioma" title="PT-BR / EN">
+            <span class="nav__lang-icon" aria-hidden="true">🌐</span>
+            <span class="nav__lang-label" id="lang-label">PT</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home / Primeira impressão -->
+    <section class="hero section" id="home">
+      <div class="hero__container container">
+        <div class="hero__content animate-on-scroll">
+          <h1 class="hero__title">
+            <span data-i18n="hero.greeting">Olá, eu sou</span>
+            <strong class="hero__name" data-i18n="hero.name">Seu Nome</strong>
+          </h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Desenvolvedor apaixonado por criar soluções que fazem diferença. 
+            Aqui você encontra um pouco do meu trabalho e da minha trajetória.
+          </p>
+        </div>
+        <div class="hero__image-wrap animate-on-scroll">
+          <div class="hero__image-placeholder">
+            <!-- Substitua por: <img src="img/sua-foto.jpg" alt="Sua foto"> -->
+            <span class="hero__image-text" data-i18n="hero.photo">Sua foto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section class="about section" id="sobre">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll" data-i18n="about.title">Sobre mim</h2>
+        <div class="about__grid">
+          <div class="about__card animate-on-scroll animate-delay-1">
+            <div class="about__card-inner">
+              <h3 class="about__card-title" data-i18n="about.card1.title">Quem sou</h3>
+              <p class="about__card-text" data-i18n="about.card1.text">
+                Texto sobre você: formação, valores, o que te move. Edite este bloco no HTML ou via CMS.
+              </p>
+            </div>
+          </div>
+          <div class="about__card animate-on-scroll animate-delay-2">
+            <div class="about__card-inner">
+              <h3 class="about__card-title" data-i18n="about.card2.title">O que faço</h3>
+              <p class="about__card-text" data-i18n="about.card2.text">
+                Suas áreas de atuação, tecnologias e tipos de projeto. Personalize conforme sua experiência.
+              </p>
+            </div>
+          </div>
+          <div class="about__card about__card--image animate-on-scroll animate-delay-3">
+            <div class="about__image-placeholder">
+              <span data-i18n="about.image1">Imagem opcional</span>
+            </div>
+          </div>
+          <div class="about__card animate-on-scroll animate-delay-4">
+            <div class="about__card-inner">
+              <h3 class="about__card-title" data-i18n="about.card3.title">Objetivos</h3>
+              <p class="about__card-text" data-i18n="about.card3.text">
+                Onde você quer chegar, projetos dos sonhos ou foco atual. Este espaço é seu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projects section" id="projetos">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll" data-i18n="projects.title">Projetos</h2>
+        <div class="projects__grid">
+          <article class="project-card animate-on-scroll animate-delay-1">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">Projeto 1</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title" data-i18n="projects.item1.title">Nome do Projeto 1</h3>
+              <p class="project-card__desc" data-i18n="projects.item1.desc">Breve descrição e tecnologias usadas.</p>
+              <a href="#" class="project-card__link" data-i18n="projects.link">Ver projeto →</a>
+            </div>
+          </article>
+          <article class="project-card animate-on-scroll animate-delay-2">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">Projeto 2</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title" data-i18n="projects.item2.title">Nome do Projeto 2</h3>
+              <p class="project-card__desc" data-i18n="projects.item2.desc">Breve descrição e tecnologias usadas.</p>
+              <a href="#" class="project-card__link" data-i18n="projects.link">Ver projeto →</a>
+            </div>
+          </article>
+          <article class="project-card animate-on-scroll animate-delay-3">
+            <div class="project-card__image">
+              <div class="project-card__placeholder">Projeto 3</div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title" data-i18n="projects.item3.title">Nome do Projeto 3</h3>
+              <p class="project-card__desc" data-i18n="projects.item3.desc">Breve descrição e tecnologias usadas.</p>
+              <a href="#" class="project-card__link" data-i18n="projects.link">Ver projeto →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section class="curiosities section" id="curiosidades">
+      <div class="container">
+        <h2 class="section__title animate-on-scroll" data-i18n="curiosities.title">Curiosidades</h2>
+        <div class="curiosities__layout">
+          <div class="curiosities__content animate-on-scroll">
+            <p class="curiosities__text" data-i18n="curiosities.text">
+              Espaço para contar algo que te define: um hobby, uma viagem, um aprendizado fora do código. 
+              Pode ser texto mais longo e até dividido em parágrafos. Aqui também dá para incluir listas ou citações.
+            </p>
+            <p class="curiosities__text" data-i18n="curiosities.text2">
+              Segunda parte do texto, se quiser. Ou use só um bloco. O layout se adapta.
+            </p>
+          </div>
+          <div class="curiosities__image-wrap animate-on-scroll">
+            <div class="curiosities__image-placeholder">
+              <span data-i18n="curiosities.image">Imagem ou ilustração</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text" data-i18n="footer">© 2025 Portfólio. Feito com cuidado.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
