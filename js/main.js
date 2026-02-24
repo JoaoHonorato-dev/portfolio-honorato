@@ -18,11 +18,13 @@
       'hero.photo': 'Sua foto',
       'about.title': 'Sobre mim',
       'about.card1.title': 'Quem sou',
-      'about.card1.text': 'Texto sobre você: formação, valores, o que te move. Edite este bloco no HTML ou via CMS.',
+      'about.card1.text': "Minha trajetória na tecnologia começou no ensino médio técnico, onde a paixão pela programação nasceu. Hoje, como graduando em ADS e desenvolvedor atuante, foco em construir soluções robustas utilizando PHP com Laravel, JavaScript e SQL. \n\r Um grande diferencial do meu trabalho atual é a integração de Inteligência Artificial, com experiência prática na API do Gemini. Acredito que o futuro do desenvolvimento está na sinergia entre boas práticas e IA, por isso invisto constantemente em especializações nessa área. Buscando sempre novos patamares técnicos, estou atualmente aprofundando meus estudos em C# (.NET) e expandindo meu stack para Python. Sou um profissional comprometido com a excelência, em constante evolução para alcançar os mais altos níveis da engenharia de software.",
       'about.card2.title': 'O que faço',
-      'about.card2.text': 'Suas áreas de atuação, tecnologias e tipos de projeto. Personalize conforme sua experiência.',
+      'about.card2.text': 'Desenvolvo aplicações web e projetos práticos utilizando JavaScript, PHP e consumo de APIs. \n\r Tenho experiência com versionamento de código usando Git e foco em criar soluções funcionais, organizadas e escaláveis. \n\r Atualmente venho explorando conceitos de Inteligência Artificial e automação, aplicando esses conhecimentos em projetos pessoais.',
       'about.card3.title': 'Objetivos',
-      'about.card3.text': 'Onde você quer chegar, projetos dos sonhos ou foco atual. Este espaço é seu.',
+      'about.card3.text': 'Meu objetivo é me tornar um desenvolvedor especialista em soluções escaláveis e inteligentes. Atualmente, foco em dominar o ecossistema .NET e aprofundar minha expertise na integração de IAs (Gemini API). Busco ambientes que valorizem a inovação tecnológica e as melhores práticas de engenharia de software, onde eu possa crescer junto com a equipe.',
+      'about.card4.title1':'Stack Principal',
+      'about.card4.title2':'Tecnologias em Evolução', 
       'about.image1': 'Imagem opcional',
       'projects.title': 'Projetos',
       'projects.item1.title': 'Nome do Projeto 1',
@@ -36,7 +38,7 @@
       'curiosities.text': 'Espaço para contar algo que te define: um hobby, uma viagem, um aprendizado fora do código. Pode ser texto mais longo e até dividido em parágrafos. Aqui também dá para incluir listas ou citações.',
       'curiosities.text2': 'Segunda parte do texto, se quiser. Ou use só um bloco. O layout se adapta.',
       'curiosities.image': 'Imagem ou ilustração',
-      'footer': '© 2025 Portfólio. Feito com cuidado.'
+      'footer': '© 2025 Portfólio. João Honorato.'
     },
     en: {
       'nav.home': 'Home',
@@ -49,11 +51,13 @@
       'hero.photo': 'Your photo',
       'about.title': 'About me',
       'about.card1.title': 'Who I am',
-      'about.card1.text': 'Text about you: background, values, what drives you. Edit this block in the HTML or via CMS.',
+      'about.card1.text': 'My journey in technology began during my technical high school years, where my passion for programming was born. Currently, as a Software Analysis and Development student and an active developer, I focus on building robust solutions using PHP with Laravel, JavaScript, and SQL. \n\r A key differentiator in my current work is the integration of Artificial Intelligence, with hands-on experience using the Gemini API. I believe the future of development lies in the synergy between best practices and AI implementation, which is why I constantly invest in specializing in this field. To reach new technical heights, I am currently deepening my studies in C# (.NET) and expanding my stack to Python. I am a professional committed to excellence, in constant evolution to reach the highest levels of software engineering.',
       'about.card2.title': 'What I do',
-      'about.card2.text': 'Your areas of work, technologies and types of projects. Customize to match your experience.',
+      'about.card2.text': 'I develop web applications and practical projects using JavaScript, PHP, and API integration.\n\r I have experience with code versioning using Git and focus on creating functional, well-structured, and scalable solutions.\n\r Currently, I am exploring concepts in Artificial Intelligence and automation, applying this knowledge to personal projects.',
       'about.card3.title': 'Goals',
-      'about.card3.text': 'Where you want to go, dream projects or current focus. This space is yours.',
+      'about.card3.text': 'My goal is to become an expert developer specializing in scalable and intelligent solutions. Currently, I am focused on mastering the .NET ecosystem and deepening my expertise in AI integration (Gemini API). I am looking for environments that value technological innovation and software engineering best practices, where I can grow together with the team.',
+      'about.card4.title1':'Main Stack',
+      'about.card4.title2':'Learning', 
       'about.image1': 'Optional image',
       'projects.title': 'Projects',
       'projects.item1.title': 'Project Name 1',
@@ -67,7 +71,7 @@
       'curiosities.text': "Space to share something that defines you: a hobby, a trip, learning outside of code. It can be longer text and even split into paragraphs. You can also add lists or quotes here.",
       'curiosities.text2': "Second part of the text if you like. Or use just one block. The layout adapts.",
       'curiosities.image': 'Image or illustration',
-      'footer': '© 2025 Portfolio. Made with care.'
+      'footer': '© 2025 Portfolio. João Honorato.'
     }
   };
 
@@ -77,7 +81,7 @@
     const t = translations[lang] || translations.pt;
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       const key = el.getAttribute('data-i18n');
-      if (t[key]) el.textContent = t[key];
+      if (t[key]) el.innerText = t[key];
     });
     const label = document.getElementById('lang-label');
     if (label) label.textContent = lang === 'en' ? 'EN' : 'PT';

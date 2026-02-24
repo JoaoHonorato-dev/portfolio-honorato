@@ -48,6 +48,7 @@ html {
 body {
   font-family: var(--font-sans);
   background: var(--black);
+  background-color: var(--black) !important;
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -105,6 +106,7 @@ ul {
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--text-primary);
+  text-decoration: unset !important;
 }
 
 .nav__logo:hover {
@@ -121,6 +123,7 @@ ul {
   color: var(--text-secondary);
   font-weight: 500;
   font-size: 0.95rem;
+  text-decoration: unset !important;
 }
 
 .nav__link:hover {
@@ -266,11 +269,30 @@ ul {
 
 .hero__name {
   display: block;
-  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-size: clamp(2.25rem, 5vw, 2rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
+}
+
+.hero__cargo {
+  display: block;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff3131,
+    #ff5a5a
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero__subtitle {
@@ -286,11 +308,22 @@ ul {
 
 .hero__image-placeholder,
 .hero__image-wrap img {
-  width: min(100%, 320px);
+  height: min(120%);
+  width: min(80%);
   aspect-ratio: 1;
   border-radius: 16px;
   border: 2px solid var(--black-border);
   background: var(--black-card);
+}
+
+.hero__image-wrap img {
+  border: 1px solid red;
+   transition: 0.5s;
+   filter: brightness(0.4);
+}
+.hero__image-wrap img:hover {
+   filter: none;
+   scale: 1.2;
 }
 
 .hero__image-placeholder {
@@ -435,6 +468,7 @@ ul {
 .project-card__link {
   font-size: 0.9rem;
   font-weight: 500;
+  text-decoration: unset !important;
 }
 
 /* ========== Curiosidades ========== */
@@ -503,3 +537,42 @@ ul {
 .animate-on-scroll.animate-delay-2 { transition-delay: 0.2s; }
 .animate-on-scroll.animate-delay-3 { transition-delay: 0.3s; }
 .animate-on-scroll.animate-delay-4 { transition-delay: 0.4s; }
+
+
+.skills-card {
+  text-align: center;
+  padding: 25px;
+}
+
+.skills-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: linear-gradient(90deg,#ff8a8a,#f01010);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.skills-grid img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.9);
+  transition: 0.3s ease;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.15);
+  filter: grayscale(0%) brightness(1);
+}
+

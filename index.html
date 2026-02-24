@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
   <!-- Header -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#home" class="nav__logo" aria-label="Home">Portfólio</a>
+      <a href="#home" class="nav__logo" aria-label="Home">Desenvolvedor</a>
       <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -39,17 +40,19 @@
         <div class="hero__content animate-on-scroll">
           <h1 class="hero__title">
             <span data-i18n="hero.greeting">Olá, eu sou</span>
-            <strong class="hero__name" data-i18n="hero.name">Seu Nome</strong>
+            <strong class="hero__cargo"> DEV FULL STACK</strong>
+            <strong class="hero__name" >João Victor Honorato</strong>
           </h1>
           <p class="hero__subtitle" data-i18n="hero.subtitle">
             Desenvolvedor apaixonado por criar soluções que fazem diferença. 
             Aqui você encontra um pouco do meu trabalho e da minha trajetória.
           </p>
+          <i class="bi bi-github"></i>
         </div>
         <div class="hero__image-wrap animate-on-scroll">
           <div class="hero__image-placeholder">
-            <!-- Substitua por: <img src="img/sua-foto.jpg" alt="Sua foto"> -->
-            <span class="hero__image-text" data-i18n="hero.photo">Sua foto</span>
+            <img src="img/perfil.png" alt="Sua foto">
+            <!-- <span class="hero__image-text" data-i18n="hero.photo">Sua foto</span> -->
           </div>
         </div>
       </div>
@@ -76,10 +79,27 @@
               </p>
             </div>
           </div>
-          <div class="about__card about__card--image animate-on-scroll animate-delay-3">
-            <div class="about__image-placeholder">
-              <span data-i18n="about.image1">Imagem opcional</span>
+          <div class="about__card about__card--image animate-on-scroll animate-delay-3 d-grid">
+            <div class="card-body skills-card m-3">
+              <h3 class="about__card-title" data-i18n="about.card4.title1">Stack Principal</h3>
+              <div class="skills-grid">
+                <img src="img/java-script.png" alt="JavaScript" title="JavaScript">
+                <img src="img/php.png" alt="PHP" title="PHP">
+                <img src="img/git.png" alt="Git" title="Git">
+                <img src="img/sql.png" alt="SQL" title="SQL">
+                <img src="img/laravel.svg" alt="Laravel" title="Laravel">
+              </div>
             </div>
+            <div class="card-body skills-card m-3">
+              <h3 class="about__card-title" data-i18n="about.card4.title2">Tecnologias em Evolução</h3>
+              <div class="skills-grid">
+                <img src="img/c_sharp.png" alt="C#" title="C#">
+                <img src="img/dotnet.svg" alt=".NET" title=".NET">
+              </div>
+            </div>
+            <!-- <div class="about__image-placeholder">
+              <span data-i18n="about.image1">Imagem opcional</span>
+            </div> -->
           </div>
           <div class="about__card animate-on-scroll animate-delay-4">
             <div class="about__card-inner">
@@ -163,5 +183,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
