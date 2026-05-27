@@ -68,8 +68,8 @@
       'projects.item3.desc': 'Short description and technologies used.',
       'projects.link': 'View project →',
       'curiosities.title': 'Curiosities',
-      'curiosities.text': "Space to share something that defines you: a hobby, a trip, learning outside of code. It can be longer text and even split into paragraphs. You can also add lists or quotes here.",
-      'curiosities.text2': "Second part of the text if you like. Or use just one block. The layout adapts.",
+      'curiosities.text': "I had the honor of serving in the Brazilian Air Force at the Air Force Academy (AFA), an experience that strengthened my discipline, resilience, and teamwork skills.",
+      'curiosities.text2': "Beyond the professional and personal growth, I carry with me great friendships and values that directly influence the way I face challenges and continuously evolve.",
       'curiosities.image': 'Image or illustration',
       'footer': '© 2026 Portfolio. João Honorato.'
     }
