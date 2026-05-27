@@ -35,10 +35,10 @@
       'projects.item3.desc': 'Breve descrição e tecnologias usadas.',
       'projects.link': 'Ver projeto →',
       'curiosities.title': 'Curiosidades',
-      'curiosities.text': 'Espaço para contar algo que te define: um hobby, uma viagem, um aprendizado fora do código. Pode ser texto mais longo e até dividido em parágrafos. Aqui também dá para incluir listas ou citações.',
-      'curiosities.text2': 'Segunda parte do texto, se quiser. Ou use só um bloco. O layout se adapta.',
+      'curiosities.text': 'Tive a honra de servir à Força Aérea Brasileira na Academia da Força Aérea (AFA), uma experiência que fortaleceu minha disciplina, resiliência e trabalho em equipe.',
+      'curiosities.text2': 'Além do aprendizado profissional e pessoal, levo comigo grandes amizades e valores que influenciam diretamente minha forma de encarar desafios e evoluir constantemente.',
       'curiosities.image': 'Imagem ou ilustração',
-      'footer': '© 2025 Portfólio. João Honorato.'
+      'footer': '© 2026 Portfólio. João Honorato.'
     },
     en: {
       'nav.home': 'Home',
@@ -71,7 +71,7 @@
       'curiosities.text': "Space to share something that defines you: a hobby, a trip, learning outside of code. It can be longer text and even split into paragraphs. You can also add lists or quotes here.",
       'curiosities.text2': "Second part of the text if you like. Or use just one block. The layout adapts.",
       'curiosities.image': 'Image or illustration',
-      'footer': '© 2025 Portfolio. João Honorato.'
+      'footer': '© 2026 Portfolio. João Honorato.'
     }
   };
 
@@ -90,6 +90,10 @@
       localStorage.setItem('portfolio-lang', lang);
     } catch (e) {}
   }
+
+  //forçando a tradução ao entrar na tela.
+  applyTranslations(currentLang);
+
 
   function toggleLang() {
     currentLang = currentLang === 'pt' ? 'en' : 'pt';
@@ -158,4 +162,19 @@
       closeMenu();
     }
   });
+
+  const image = document.querySelector('.profile-image');
+  const imgObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        image.classList.add('active');
+      } else {
+        image.classList.remove('active');
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  imgObserver.observe(image);
 })();

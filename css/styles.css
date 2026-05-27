@@ -326,6 +326,11 @@ ul {
    scale: 1.2;
 }
 
+.hero__image-wrap img.active {
+   filter: none;
+   scale: 1.2;
+}
+
 .hero__image-placeholder {
   display: flex;
   align-items: center;
