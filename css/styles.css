@@ -476,6 +476,16 @@ ul {
   text-decoration: unset !important;
 }
 
+.danger{
+  color: red;
+}
+.success{
+  color: green;
+}
+.warning{
+  color: orange;
+}
+
 /* ========== Curiosidades ========== */
 .curiosities__layout {
   display: grid;
